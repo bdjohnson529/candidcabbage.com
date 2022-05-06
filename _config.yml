@@ -1,0 +1,26 @@
+title: Candid Cabbage
+github_username: bdjohnson529
+
+exclude:
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+
+collections:
+  docs:
+    output: true
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+  sourcemap: development

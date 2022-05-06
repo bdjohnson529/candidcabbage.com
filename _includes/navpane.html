@@ -1,0 +1,19 @@
+<div class="navpane">
+  <ul class="nav nav-tabs">
+    {% if include.link == "landing" %}
+      <li class="nav-item">
+        <a class="nav-link active" href="{{ include.topic_path }}">{{ include.topic }}</a>
+      </li>
+    {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ include.topic_path }}">{{ include.topic }}</a>
+      </li>
+    {% endif %}
+
+    {% unless include.link contains "landing" %}
+      <li class="nav-item">
+        <a class="nav-link active" href="#">{{ include.section }}</a>
+      </li>
+    {% endunless %}
+  </ul>
+</div>
