@@ -12,8 +12,6 @@ The upload can be accomplished using the [file upload button](https://retool.com
 ### Validating Data
 The `fileUploadButton` can parse CSV files and store the parsed object as an array in the application state, as `fileUploadButton.parsedValue`. We could write a JavaScript query to validate `fileUploadButton.parsedValue`, and return `true` if the data is valid, and `false` otherwise. However, this approach does not allow us to change the data in the CSV.
 
-A more compelling use case would be to upload data from a CSV, validate that data, and allow the user to modify rows which are invalid. We could use forms to gather user input and write queries to modify the `fileUploadButton.parsedValue` model. However, what if the user wants to upload two CSVs?
-
 A more elegant solution is to decouple the data from the `fileUploadButton` component, using [temporary state](https://docs.retool.com/docs/temporary-state). The `fileUploadButton` submit can trigger a JS query which copies the CSV contents to our temporary state. Similarly, we can write methods to update and delete records from the temporary state.
 
 In effect we will use temporary state variable `records` as a data store, and construct queries to cover the usual combination of CRUD operations. For our CSV upload app, we need to cover several operations:
