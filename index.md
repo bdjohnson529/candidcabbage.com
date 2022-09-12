@@ -3,7 +3,7 @@ layout: home
 ---
 # Candid Cabbage
 
-Hi, I'm Ben Johnson, a sales engineer at Retool. This site is a collection of articles about my experience building with Retool. Articles may be moved to the Retool website in the future.
+Hi, I'm Ben Johnson, a sales engineer at Retool. This site is a knowledge repository of things I have learned about building softare in Retool.
 
 <div>
   <ul>

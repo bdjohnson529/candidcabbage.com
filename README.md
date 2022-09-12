@@ -16,12 +16,6 @@ View the application at `http://localhost:4000/`. Notice that the website is sav
 
 # Deployment
 
-## Serve Locally
-To serve the website locally, enter the following command in the Anaconda CMD.
-```
-python -m http.server
-```
-
 ## Deploy to S3
 The website is hosted using AWS S3 and Route 53. To deploy the website to AWS S3, enter the following command in the Windows CMD. Make sure you run the command from the `_site` directory so you only upload the static website, not the associated Jekyll files!
 ```
